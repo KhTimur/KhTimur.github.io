@@ -7,12 +7,7 @@
 	<body>
 		<canvas id='example'>Обновите браузер</canvas>
 		<br/>
-                <p id="p1">Точки ломанной</p>
-                <p id="p2">Точки для закрашивания</p>
-                <p id="p3">Точки Кривой Безье</p>
-		<br/>
-                Алгоритм закрашивания
-		<br/>
+             
 		<script>
 			var example = document.getElementById("example"),
 			    text_db = document.getElementById("p1"),
@@ -216,7 +211,7 @@
 		</script>
 
         
-          <fieldset> <legend><b>Что рисовать?</b></legend>
+
           <label><input type="radio" name="fig1" value="rect1" checked="checked" onclick="setInputRect()">ломанная</label>
           <label><input type="radio" name="fig1" value="lin1" onclick="Bezier_curve()">Кривая Безье</label>
           </fieldset>
