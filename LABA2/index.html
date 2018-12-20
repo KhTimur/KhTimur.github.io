@@ -52,12 +52,12 @@ function draw(img) {
 	smooth();
 	var canvasSmooth = document.getElementById('lab2Smooth');
 	var ctxs = canvasSmooth.getContext('2d');
-	imageDataSmooth = ctxs.getImageData(500, 0, img.width, img.height);
+	imageDataSmooth = ctxs.getImageData(800, 0, img.width, img.height);
 	dataSmooth = imageDataSmooth.data;
 	for(k = 0; k < dataSmooth.length; k++) {
 		dataSmooth[k] = buffer[k];
 	}
-	ctx.putImageData(imageDataSmooth, 600, 0);
+	ctx.putImageData(imageDataSmooth, 1000, 0);
 }
 </script> 
 </BODY> 
